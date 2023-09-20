@@ -1,10 +1,16 @@
-import React from 'react'
-import { Text, View } from 'react-native';
+import React from 'react';
+import {SafeAreaView, StatusBar, StyleSheet, Text, View} from 'react-native';
+import {CalculadoraScreen} from './src/screens/CalculadoraScreen';
+import { styles } from './src/theme/AppTheme';
+
 
 const App = () => {
   return (
-    <View><Text>Hola mundo Bv</Text></View>
-  )
-}
+    <SafeAreaView style={styles.fondo}>
+      <StatusBar backgroundColor={"black"} barStyle={'light-content'}/>
+      <CalculadoraScreen />
+    </SafeAreaView>
+  );
+};
 
 export default App;
