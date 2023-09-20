@@ -25,18 +25,5 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  boton: {
-    backgroundColor: 'white',
-    width: 80,
-    borderRadius: 50,
-    height: 80,
-    justifyContent: 'center',
-  },
-  textoBoton: {
-    fontSize: 30,
-    padding: 10,
-    color: 'black',
-    textAlign: 'center',
-    fontWeight: 'bold',
-  },
+  
 });

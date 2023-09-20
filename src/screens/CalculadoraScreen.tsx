@@ -33,8 +33,8 @@ export const CalculadoraScreen = () => {
         <BotonCalculadora title="+" tipoBoton="o" />
       </View>
       <View style={styles.contenedorBotones}>
-        <BotonCalculadora title="0" tipoBoton="n" />
-        <BotonCalculadora title="0" tipoBoton="n" />
+        <BotonCalculadora title="0" tipoBoton="n" ancho={true} />
+        
         <BotonCalculadora title="." tipoBoton="n" />
         <BotonCalculadora title="=" tipoBoton="o" />
       </View>
