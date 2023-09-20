@@ -9,22 +9,21 @@ export const styles = StyleSheet.create({
   containerCalculadora: {
     flex: 1,
     justifyContent: 'flex-end',
-    padding:10,
-   
+    padding: 10,
   },
   resultado: {
     fontSize: 50,
     color: 'white',
-    textAlign:'right',
+    textAlign: 'right',
   },
   resultadoPequenio: {
     fontSize: 20,
     color: 'rgba(255,255,255,0.5)',
-    textAlign:'right',
+    textAlign: 'right',
   },
-  contenedorBotones:{
-flexDirection: 'row',
-
+  contenedorBotones: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   boton: {
     backgroundColor: 'white',
@@ -35,10 +34,9 @@ flexDirection: 'row',
   },
   textoBoton: {
     fontSize: 30,
-    padding:10,
-    color: 'white',
-    textAlign:'center',
+    padding: 10,
+    color: 'black',
+    textAlign: 'center',
     fontWeight: 'bold',
-
   },
 });
