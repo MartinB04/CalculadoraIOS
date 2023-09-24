@@ -2,13 +2,14 @@ import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 interface Boton {
-  title: string;
+  texto: string;
   tipoBoton: 'n' | 'o' | 'c';
-  ancho?: boolean;
+  ancho?: boolean,
+  accion: (numeroTexto:string) => void,
 }
 
-export const BotonCalculadora = ({title, tipoBoton, ancho = false}: Boton) => {
-  console.log(title);
+export const BotonCalculadora = ({texto, tipoBoton, ancho = false, accion}: Boton) => {
+  
 
   let ColorBoton = {};
   switch (tipoBoton) {
@@ -27,15 +28,16 @@ export const BotonCalculadora = ({title, tipoBoton, ancho = false}: Boton) => {
   }
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => accion(texto)}>
       <View
         style={[
           styles.boton,
           ColorBoton,
+          
           ,
           ancho ? {width: 170} : {width: 80},
         ]}>
-        <Text style={styles.textoBoton}>{title}</Text>
+        <Text style={styles.textoBoton}>{texto}</Text>
       </View>
     </TouchableOpacity>
   );
